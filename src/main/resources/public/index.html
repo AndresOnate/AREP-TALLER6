@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de productos</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Log App</h2>
+        <form action="/log" method="get">
+            <label for="log">Mensaje:</label>
+            <input type="text" id="log" name="msg">
+        </form>
+        <input type="button" value="Search" onclick="loadGetLogMsg()">
+        <div id="logmsg"></div>
+    </div>
+<script src="js/api.js"></script>
+</body>
+</html>
