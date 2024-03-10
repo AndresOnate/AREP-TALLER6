@@ -71,7 +71,25 @@ Las siguientes instrucciones le permitirán descargar una copia y ejecutar la ap
    ![image](https://github.com/AndresOnate/AREP_TALLER5/assets/63562181/f11f64cd-7c95-4dda-825d-4f1ad2b42fe0)
 
 
-   
+## Generando las imagenes
+
+### App
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/5cdfb3ac-80cf-43e2-ae86-766488189964)
+
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/f103e3fa-6f58-48c0-a595-4a21e780bcdf)
+
+ ![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/3db2ea40-f0dd-4d0e-8bf2-cec10d3cfaea)
+
+### LogService
+
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/27b3ba92-4d9c-4d9f-a028-27395129fcaf)
+
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/f36d0e66-fa1f-474b-8084-af21ef44b2a1)
+
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/6af2639f-f91c-433b-850c-f32b2d9ad4d1)
+
+
+
 ## Probando la Aplicación.  
 
 Ingrese a la siguiente URL para ingresar a el cliente: `http://localhost:34000/index.html`.
