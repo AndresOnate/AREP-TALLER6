@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de productos</title>
+    <title>Log Service</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -13,8 +13,9 @@
             <label for="log">Mensaje:</label>
             <input type="text" id="log" name="msg">
         </form>
-        <input type="button" value="Search" onclick="loadGetLogMsg()">
+        <input type="button" value="Send" onclick="loadGetLogMsg()">
         <div id="logmsg"></div>
+        <div id="table-container"></div>
     </div>
 <script src="js/api.js"></script>
 </body>

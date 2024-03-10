@@ -16,7 +16,12 @@ public class LogService {
         MongoDatabase database = MongoUtil.getDB();
         LogDAO logDAO = new LogDAO(database);
 
+        get("/hello", (req,res) ->  {
+            return "Servicio Funcionando";
+        });
+
         get("/logservice", (req,res) ->  {
+            System.out.println("Solicitud al Log Service");
             res.type("application/json");
             logDAO.addLog(req.queryParams("msg"), new Date());
             return logDAO.listLogs();

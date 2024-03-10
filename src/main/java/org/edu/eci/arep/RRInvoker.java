@@ -13,9 +13,9 @@ public class RRInvoker {
 
     private static int currentLogServer = 0;
     private static final String[] LOG_SERVERS = new String[]{
-            "http://log_service_1:35000",
-            "http://log_service_2:35000",
-            "http://log_service_3:35000",
+            "http://log-service1:35000",
+            "http://log-service2:35000",
+            "http://log-service3:35000",
     };
 
     public static String invoke(String log) throws IOException {
@@ -46,7 +46,7 @@ public class RRInvoker {
     }
 
     private static void roundRobindServer() {
-        if(currentLogServer < 3){
+        if(currentLogServer < 2){
             currentLogServer++;
         }else {
             currentLogServer = 0;

@@ -23,7 +23,7 @@ public class LogDAO {
     }
 
     public void addLog(String msg, Date date) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String dateString = dateFormat.format(date);
         Document newLog = new Document("Date", dateString)
                 .append("log", msg);

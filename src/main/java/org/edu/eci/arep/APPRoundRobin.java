@@ -7,9 +7,14 @@ public class APPRoundRobin {
 
         port(getPort());
         staticFiles.location("/public");
+
         get("/log", (req,res) ->  {
             res.type("application/json");
             return RRInvoker.invoke(req.queryParams("msg"));
+        });
+
+        get("/hello", (req,res) ->  {
+            return "Servicio Funcionando";
         });
     }
 

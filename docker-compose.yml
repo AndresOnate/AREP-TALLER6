@@ -1,31 +1,31 @@
 version: '1'
 
 services:
-  log_service_1:
+  log-service1:
     image: aonatecamilo/arep_taller6_logservice
-    container_name: log_service_1
+    container_name: log-service1
     ports:
-      - "30001:35000"
+      - "35001:35000"
     networks:
       - my_network
     depends_on:
       - db
 
-  log_service_2:
+  log-service2:
     image: aonatecamilo/arep_taller6_logservice
-    container_name: log_service_2
+    container_name: log-service2
     ports:
-      - "30002:35000"
+      - "35002:35000"
     networks:
       - my_network
     depends_on:
       - db
 
-  log_service_3:
+  log-service3:
     image: aonatecamilo/arep_taller6_logservice
-    container_name: log_service_3
+    container_name: log-service3
     ports:
-      - "30003:35000"
+      - "35003:35000"
     networks:
       - my_network
     depends_on:
@@ -33,15 +33,15 @@ services:
 
   app_round_robin:
     image: aonatecamilo/arep_taller6_approundrobin
-    container_name: app_round_robin
+    container_name: approundrobin
     ports:
-      - "46000:46000"
+      - "38000:46000"
     networks:
       - my_network
     depends_on:
-      - log_service_1
-      - log_service_2
-      - log_service_3
+      - log-service1
+      - log-service2
+      - log-service3
       - db
   db:
     image: mongo:3.6.1
@@ -54,7 +54,6 @@ services:
     command: mongod
     networks:
       - my_network
-
 
 networks:
   my_network:
