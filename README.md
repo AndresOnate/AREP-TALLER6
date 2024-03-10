@@ -159,6 +159,16 @@ Se instala los componentes necesarios para ejecutar `docker-compose` con los sig
 
 En el siguiente video se muestran los despliegues funcionando en la máquina virtual: 
 
+Imágenes del despliegue:
+
+Servidor de la aplicación:
+
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/641b2ec2-3a5d-4e8a-bd7f-6da917eb1a98)
+
+Instancias de los contenedores:
+
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/d6e2737f-ca9e-4524-ba0c-6c3db316e207)
+
 
 ## Construido Con. 
 
