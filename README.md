@@ -84,9 +84,12 @@ Las siguientes instrucciones le permitirán descargar una copia y ejecutar la ap
 
 ![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/27b3ba92-4d9c-4d9f-a028-27395129fcaf)
 
-![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/f36d0e66-fa1f-474b-8084-af21ef44b2a1)
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/11f0ab32-9451-45e8-a12f-7bf13c15a3d8)
 
-![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/6af2639f-f91c-433b-850c-f32b2d9ad4d1)
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/cd6a2615-c262-4a06-a0d5-1248021b9a1e)
+
+
+## Despliegue en EC2
 
 
 
