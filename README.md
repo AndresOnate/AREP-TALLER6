@@ -149,5 +149,9 @@ En el siguiente video se muestran los despliegues funcionando en la máquina vir
 
 - Maven - Administrador de dependencias
 
+## Autores 
+
+- Andrés Camilo Oñate Quimbayo
+
 ## Versión
 1.0.0
