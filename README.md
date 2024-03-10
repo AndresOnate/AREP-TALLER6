@@ -65,47 +65,28 @@ Las siguientes instrucciones le permitirán descargar una copia y ejecutar la ap
    
    Debería ver algo así en consola:
 
-   ![image](https://github.com/AndresOnate/AREP_TALLER5/assets/63562181/828a8d77-43ac-4a8f-8d48-cf1025df14c1)
+   ![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/8914eb81-f40d-456b-8c8f-25d76e2512fe)
 
    Verifique en la aplicación de escritorio de Docker que los contenedores se esté ejecutando
+
+   ![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/e784076f-d88d-4124-9536-e785c307be1b)
+
    
-   ![image](https://github.com/AndresOnate/AREP_TALLER5/assets/63562181/8ca8bc5c-0b3a-4623-999f-2ccaa638424c)
-
-
-
-
-## Despliegue en EC2
-
-
-
 ## Probando la Aplicación.  
 
-Ingrese a la siguiente URL para ingresar a el cliente: `http://localhost:34000/index.html`.
-Si está ejecutando la aplicación desde la máquina virtual de java y no con el contenedor, el puerto es el `4567`.
+Ingrese a la siguiente URL para ingresar a el cliente: `http://localhost:38000/index.html`.
 
-Ingrese en los campos del formulario los valores, de clic en el botón `Search`:
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/d6bb1df5-fe2d-4adb-9ea5-69260f5a676f)
 
-![image](https://github.com/AndresOnate/AREP_TALLER5/assets/63562181/c5247754-f588-45cc-a17c-d3c1d6ec1523)
+Ingrese el valor del mensaje y de clic en el botón `Send`:
 
-- Para las funciones Seno y Coseno ingresé el valor que desea calcular en radianes.
-- Para la función palíndromo ingrese la palabra que quiere evaluar, si la palabra es palíndromo retornará true,  de lo contrario retornará false.
-- Para la función Vector, ingrese las coordenadas de los puntos en el formato **x,y**
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/ed754812-8647-4cea-81de-0a5954a7b5f5)
 
-Función Seno
 
-![image](https://github.com/AndresOnate/AREP_TALLER5/assets/63562181/d274867a-72f4-4836-928d-1bbfa156466a)
+La aplicación mostrará las 10 ultimas cadenas almacenadas en la base de datos y la fecha en que fueron almacenadas.
 
-Función Coseno:
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/39eb7e7d-be76-4262-ba28-7ba99a79e99b)
 
-![image](https://github.com/AndresOnate/AREP_TALLER5/assets/63562181/ffd854f5-161e-488f-81cb-ee758fd96d32)
-
-Función Palíndromo:
-
-![image](https://github.com/AndresOnate/AREP_TALLER5/assets/63562181/f262cc30-8a0e-4bc4-8f60-fa69fd3dde0f)
-
-Función Vector:
-
-![image](https://github.com/AndresOnate/AREP_TALLER5/assets/63562181/edce534b-8d37-4587-9141-4caaafbd5aea)
 
 
 ## Construido Con. 
