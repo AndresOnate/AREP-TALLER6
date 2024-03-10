@@ -5,14 +5,22 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 
 public class RRInvoker {
 
     private static final String USER_AGENT = "Mozilla/5.0";
-    private static final String GET_URL = "http://localhost:5000/logservice";
 
-    public static String invoke() throws IOException {
+    private static int currentLogServer = 0;
+    private static final String[] LOG_SERVERS = new String[]{
+            "http://log_service_1:35000",
+            "http://log_service_2:35000",
+            "http://log_service_3:35000",
+    };
 
+    public static String invoke(String log) throws IOException {
+        String encodedLog = URLEncoder.encode(log, "UTF-8");
+        String GET_URL = LOG_SERVERS[currentLogServer] + "/logservice?msg=" + encodedLog;
         URL obj = new URL(GET_URL);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
@@ -33,6 +41,15 @@ public class RRInvoker {
             System.out.println("GET request not worked");
         }
         System.out.println("GET DONE");
+        roundRobindServer();
         return response.toString();
+    }
+
+    private static void roundRobindServer() {
+        if(currentLogServer < 3){
+            currentLogServer++;
+        }else {
+            currentLogServer = 0;
+        }
     }
 }

@@ -1,0 +1,64 @@
+version: '1'
+
+services:
+  log_service_1:
+    image: aonatecamilo/arep_taller6_logservice
+    container_name: log_service_1
+    ports:
+      - "30001:35000"
+    networks:
+      - my_network
+    depends_on:
+      - db
+
+  log_service_2:
+    image: aonatecamilo/arep_taller6_logservice
+    container_name: log_service_2
+    ports:
+      - "30002:35000"
+    networks:
+      - my_network
+    depends_on:
+      - db
+
+  log_service_3:
+    image: aonatecamilo/arep_taller6_logservice
+    container_name: log_service_3
+    ports:
+      - "30003:35000"
+    networks:
+      - my_network
+    depends_on:
+      - db
+
+  app_round_robin:
+    image: aonatecamilo/arep_taller6_approundrobin
+    container_name: app_round_robin
+    ports:
+      - "46000:46000"
+    networks:
+      - my_network
+    depends_on:
+      - log_service_1
+      - log_service_2
+      - log_service_3
+      - db
+  db:
+    image: mongo:3.6.1
+    container_name: db
+    volumes:
+      - mongodb:/data/db
+      - mongodb_config:/data/configdb
+    ports:
+      - 27017:27017
+    command: mongod
+    networks:
+      - my_network
+
+
+networks:
+  my_network:
+
+volumes:
+  mongodb:
+  mongodb_config:
