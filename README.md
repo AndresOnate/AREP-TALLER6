@@ -143,7 +143,22 @@ Se creó una instancia de EC2 en AWS con las siguientes características.
 
 ![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/8edad574-fb65-4bc9-bca5-751189a6f1b2)
 
+Se instala git con el siguiente comando: 
+
+``` sudo yum install git ``` 
+
+Se instala los componentes necesarios para ejecutar `docker-compose` con los siguientes comandos: 
+
+``` sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose ```
+
+``` sudo chmod +x /usr/local/bin/docker-compose```
+
+``` docker-compose version ```
+
+![image](https://github.com/AndresOnate/AREP-TALLER6/assets/63562181/0a56a98b-fbb8-49bf-8ca3-f6d1c5d9194f)
+
 En el siguiente video se muestran los despliegues funcionando en la máquina virtual: 
+
 
 ## Construido Con. 
 
